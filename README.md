@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/capistrano3-asg-deploy.png)](http://badge.fury.io/rb/capistrano3-asg-deploy)
 # capistrano3-asg-deploy
 Capistrano 3 plugin for AWS Auto Scaling deploys.
 
