@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'capistrano/autoscaling_deploy/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano3-asg-deploy'
+  spec.name          = 'capistrano3-aws-asg-deploy'
   spec.version       = Capistrano::AutoScalingDeploy::VERSION
-  spec.authors       = ['Aftab Akram']
-  spec.email         = ['aftabakram04@gmail.com']
+  spec.authors       = ['Maxim Baibakov']
+  spec.email         = ['maxim.baibakov@gmail.com']
   spec.summary       = %q{Deploy to AWS Auto Scaling group.}
   spec.description   = %q{Get all instances in an AutoScaling group by AutoScaling group name.}
-  spec.homepage      = 'https://github.com/Aftab-Akram/capistrano3-asg-deploy'
+  spec.homepage      = 'https://github.com/maximbaibakov/capistrano3-aws-asg-deploy'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)

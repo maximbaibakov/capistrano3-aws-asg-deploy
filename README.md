@@ -1,10 +1,10 @@
 [![Gem Downloads](http://img.shields.io/gem/dt/capistrano3-asg-deploy.svg)](https://rubygems.org/gems/capistrano3-asg-deploy) [![Gem Version](https://badge.fury.io/rb/capistrano3-asg-deploy.png)](http://badge.fury.io/rb/capistrano3-asg-deploy) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-# capistrano3-asg-deploy
+# capistrano3-aws-asg-deploy
 Capistrano 3 plugin for AWS Auto Scaling deploys.
 
-This is a fork of [marcoschicote/capistrano3-autoscaling-deploy](https://github.com/marcoschicote/capistrano3-autoscaling-deploy), updated with new features and Capistrano 3 conventions.
+This is a fork of [Aftab-Akram/capistrano3-asg-deploy](https://github.com/Aftab-Akram/capistrano3-asg-deploy), updated with new features and Capistrano 3 conventions.
 
- I'm mainly building this gem as the author for the above gem hasen't update the code with aws-sdk-3 changes
+ I'm mainly building this gem to work with private ip address
 
 ## Requirements
 
@@ -17,7 +17,7 @@ This is a fork of [marcoschicote/capistrano3-autoscaling-deploy](https://github.
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano3-asg-deploy'
+    gem 'capistrano3-aws-asg-deploy'
 
 And then execute:
 
@@ -25,7 +25,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install capistrano3-asg-deploy
+    $ gem install capistrano3-aws-asg-deploy
 
 Add this line to your application's Capfile:
 
@@ -70,7 +70,7 @@ server ip_address3, :app, :web
 
 ## Contributing
 
-1. Fork it ( https://github.com/Aftab-Akram/capistrano3-asg-deploy/fork )
+1. Fork it ( https://github.com/maximbaibakov/capistrano3-aws-asg-deploy/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

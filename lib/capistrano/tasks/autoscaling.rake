@@ -51,7 +51,7 @@ namespace :autoscaling_deploy do
     instances
   end
 
-  # Get Autoscale Group Healthy Instance Public IP's
+  # Get Autoscale Group Healthy Instance Private IP's
   def get_instances_ip(region, key, secret, group_name)
     credentials = {
       region: region,
@@ -65,7 +65,7 @@ namespace :autoscaling_deploy do
       if instance.health_status != 'Healthy'
         puts "Autoscaling: Skipping unhealthy instance #{instance.instance_id}"
       else
-        autoscaling_dns << ec2.instance(instance.instance_id).public_ip_address
+        autoscaling_dns << ec2.instance(instance.instance_id).private_ip_address
       end
     end
 
